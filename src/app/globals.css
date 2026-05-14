@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0d141c;
+  --surface: #0d141c;
+  --surface-container-lowest: #080f17;
+  --surface-container-low: #151c25;
+  --surface-container: #192029;
+  --surface-container-high: #242a33;
+  --surface-container-highest: #2f353e;
+  --surface-variant: #2f353e;
+  --outline: #8c919d;
+  --outline-variant: #414751;
+  --on-surface: #dce3ef;
+  --on-surface-variant: #c1c6d3;
+  --primary: #a6c8ff;
+  --primary-container: #005baa;
+  --on-primary: #00315f;
+  --tertiary: #78d5de;
+  --error: #ffb4ab;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-container-lowest: var(--surface-container-lowest);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-surface-container: var(--surface-container);
+  --color-surface-container-high: var(--surface-container-high);
+  --color-surface-container-highest: var(--surface-container-highest);
+  --color-surface-variant: var(--surface-variant);
+  --color-outline: var(--outline);
+  --color-outline-variant: var(--outline-variant);
+  --color-on-surface: var(--on-surface);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-primary: var(--primary);
+  --color-primary-container: var(--primary-container);
+  --color-on-primary: var(--on-primary);
+  --color-tertiary: var(--tertiary);
+  --color-error: var(--error);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-headline);
+}
+
+body {
+  background: var(--background);
+  color: var(--on-surface);
+  font-family: var(--font-body), sans-serif;
+}
+
+.card {
+  @apply rounded-xl border border-outline-variant/25 bg-surface-container-low/80 shadow-xl backdrop-blur;
+}
+
+.font-headline {
+  font-family: var(--font-headline), sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-body), sans-serif;
+}
+
+.font-label {
+  font-family: var(--font-body), sans-serif;
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  line-height: 1;
+}
+
+.material-filled {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.glass-card {
+  background: rgba(47, 53, 62, 0.6);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+}
+
+.glass-panel {
+  background: rgba(47, 53, 62, 0.6);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+}
+
+.glass-effect {
+  background: rgba(47, 53, 62, 0.6);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+}
+
+.blue-gradient,
+.cta-gradient,
+.gradient-primary {
+  background: linear-gradient(135deg, #005baa 0%, #a6c8ff 100%);
+}
+
+.primary-gradient {
+  background: linear-gradient(135deg, #005baa 0%, #a6c8ff 100%);
+}
+
+.btn-primary-gradient {
+  background: linear-gradient(135deg, #005baa 0%, #a6c8ff 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #a6c8ff 0%, #005baa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.agency-map-bg {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDVdaGZFPXa6tkzhQh-gfVlfDpZ5YeqXdTVKB_7-T2aklk-UH8ul8AB4xIBfwwH6D3E4OU4MUhkSKhFJVCWkGLkuEB5kG_bk0dMYlJoQDSRkLNq3125fnzdH3P4bbN3K-_A7Cdiplg4xQl3vfbdfGd9z4SHw6b3bzViPJUJIkUVvh1Djqw0IQ9YgbimLDQuq4Ir9i31LcMPYIPjF5ajIUti2maWxti_WQacn0IWroXmS3NCM03w1nZntR83b-zFtGNe3tDKy9tHaT4");
+  background-size: cover;
+  background-position: center;
+}
+
+.otp-glow {
+  box-shadow: 0 0 20px rgba(166, 200, 255, 0.1);
+}
